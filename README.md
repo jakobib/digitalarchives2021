@@ -1,0 +1,1 @@
+Talk about *Identifiers, Authority Files & Linked Open Data* at the summer school [Digital Archives. Data Literacy and Presentation Strategies in Audiovisual Archives](https://www.filmuniversitaet.de/en/studies/study-programs/filmuni-summer-school/digital-archives/), September 9th, 2021.
