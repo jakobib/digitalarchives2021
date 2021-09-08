@@ -105,13 +105,15 @@ These make up **ontologies** (special kind of vocabularies)
 
 * German Federal Archives call numbers: ?
 
-## Summary
+## First Summary
 
-* Information is about things with properties and connections
+* Data is about things with properties and connections
 
-* Things (*including people, works, ideas...*) should have identifiers
+* Things (*including people, works, ideas...*)\
+  should have identifiers
 
-* Properties (*keys, fields, connection types...*) should have identifiers
+* Properties (*keys, fields, connection types...*)\
+  should have identifiers
 
 * Identifiers should be available in form of URIs
 
@@ -126,7 +128,13 @@ These make up **ontologies** (special kind of vocabularies)
 
 * Artificial name for a thing
 
-* ...
+* ...(TODO)
+
+## Data and reality
+
+Some problem with names
+
+* Homonyms, synonyms, language
 
 ## Identifier requirements
 
@@ -134,14 +142,6 @@ These make up **ontologies** (special kind of vocabularies)
     * 
 * accessible (look-up)
 * ...
-
-
-* Background: What is (meta)data?
-    * Semiotics
-    * "Things, not strings"
-* Homonyms, synonyms, language
-    * use identifiers instead!
-    * example: Wikidata
 
 
 ## Identifier examples
@@ -153,73 +153,116 @@ film identifiers:
 
 ## Identifier mapping
 
+Multiple identifiers used for same thing.
+
+"reconciliation", "mapping", "alignment"
+
 ...
+
+Tools: OpenRefine, Cocoda, Pen & Paper\
+(depending on the type of authority file)
 
 # Authority Files and vocabularies
 
+## Motivation
 
-## ...
+Identifiers must be organised
 
-* Identifiers & Authority Files
-    * Why?
+...
 
-
-## Many authority files exist
+## Where to find authority files
 
 ![https://bartoc.org](bartoc-logo.svg)
 
-List of Film identifiers in Wikidata
-
-
-# Summary
-
-* Controlled vocabularies
-    * Subjects
-    * classification (e.g. genre)
-    *
-
-* Problem: Opiniated
+*Please let us know if you miss some relevant authority files!* 
 
 ## Types of Authority files
 
 1. Name Authority files & registries
 
+2. Classification and thesauri
+
+3. Ontologies, data models and formats
+
+## Name Authority files & registries
+
 * Relatively simple to agree on identity
-* large number of entities, mostly unconnected
+* large number of entities, mostly unconnected\
+  e\.g. people, companies, countries
+* Required for linking
 
-e\.g. people, companies, countries
+Example: Databases of people
 
-2. Ontologies, data models and formats
-
-*Not always part of vocabularies*
+## Ontologies, data models and formats
 
 * Relatively small
 * Complex type of connections possible
 * Classes (object types) and properties (fields)
 * Used as metadata schema
 * Very opiniated, much depens on a use case
+* Required for interoperability
 
 Example: FIAF Ontology
 
-3. Classification and thesauri
+## Classification and thesauri
 
 * Can be large or small
 * Simple kind of connections (e.g. hierarchy)
-* Difficult to agreen
+* Also opiniated
+* Required for overviews
 
+Example: genres, subjects...
 
+# Linked Open Data (LOD)
 
-Referencing dataWhat 
+## Linked Open Data principles
 
-# Linked Open Data
+1. Use URIs as names for things.
 
-Principles, Linking your data with other data sources, ...
+2. Use HTTP URIs so that people can look up those names.
 
-...
+3. When someone looks up a URI, provide useful information.
 
-* use URIs to identify things
-* use HTTP URIs so people can look up things
-* ...
+4. Include links to other URIs,\
+   so that they can discover more things.
+
+\vfill
+
+Berners-Lee (2006): *Linked Data*
+
+## 5 Star Open Data
+
+![](5-star-steps.png){width=90%}
+
+Berners-Lee (2010): *Is your Linked Open Data 5 Star?*
+
+## FAIR data principles
+
+* **F**indable
+
+* **A**ccesible
+
+* **I**interoperable
+
+* **R**eusable
+
+\vfill
+
+Wilkinson et al (2016):  *The FAIR Guiding Principles for scientific data management and stewardship*
+
+## Summary in my Jakob's words
+
+* Use stable identifiers for entities you care about\
+  (preferred: URIs)
+
+* Allow to look up identifiers\
+  (findable & accessible)
+
+* Deliver some useful data\
+  (open license, accessible & reusable)
+
+* Use standard vocabularies for identifiers and data formats\
+  (interoperable & linked)
 
 # Wikidata revisited
 
@@ -235,11 +278,13 @@ Principles, Linking your data with other data sources, ...
 
 * ...
 
-## Example: Das Laufende Filmband
+## Example: *Das laufende Filmband*
 
 * Wikidata item [Q108430283](http://www.wikidata.org/entity/Q108430283)
 
 * labels and statements (optionally with qualifiers and references)
+
+\vfill
 
 Some open questions:
 
