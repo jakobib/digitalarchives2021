@@ -10,6 +10,10 @@
 
 # Example: Women in the Film Lab
 
+## Data Modeling
+
+![](data-modeling-simplified.png){width=100%}
+
 ---
 
 ```graphviz
@@ -126,49 +130,59 @@ These make up **ontologies** (special kind of vocabularies)
 
 ## What's an identifier?
 
-* Artificial name for a thing
+Artificial name for a thing, given in defined form
 
-* ...(TODO)
+* person identifier (e.g. ORCID)
+* language code
+* telephone number
+* archive call number
+* ...
 
-## Data and reality
+\vfill
 
-Some problem with names
-
-* Homonyms, synonyms, language
+*Question: what's "a thing"?*
 
 ## Identifier requirements
 
-* unique
-    * 
-* accessible (look-up)
-* ...
+* unambiguous (reference *one* thing)
 
+* persistent (stay unchanged)
 
-## Identifier examples
+* unique (not many synonyms)
 
-film identifiers:
+* simple (short, readable... in some context)
 
-* [175 Wikidata property to identify films](https://w.wiki/426y)
-* people identifiers
+* actionable (usable for some applications)
+
+## Example: film identifiers
+
+* Wikidata contains [175 properties to identify films](https://w.wiki/426y)!
+
+* Each identifier requires an **agency** for identifier management
 
 ## Identifier mapping
 
-Multiple identifiers used for same thing.
+* Multiple identifiers can be used to reference the same thing
 
-"reconciliation", "mapping", "alignment"
+* Mapping / reconciliation / alignment ...
 
-...
-
-Tools: OpenRefine, Cocoda, Pen & Paper\
-(depending on the type of authority file)
+* Tools: OpenRefine, Cocoda, Pen & Paper\
+  (depending on the type of authority file)
 
 # Authority Files and vocabularies
 
 ## Motivation
 
-Identifiers must be organised
+* Identifiers must be managed by some agency or system
 
-...
+* A managed set of identifiers is a **knowledge organization system**
+  
+    * database
+    * authority file
+    * classification
+    * ontology
+    * data model
+    * ...
 
 ## Where to find authority files
 
@@ -191,7 +205,7 @@ Identifiers must be organised
   e\.g. people, companies, countries
 * Required for linking
 
-Example: Databases of people
+Example: Databases of people such as ORCID
 
 ## Ontologies, data models and formats
 
@@ -296,7 +310,14 @@ Some open questions:
 
 ## Summary
 
-* identifiers: it's all about explicit identity
+* identifiers
+    * artificial names for things
+    * it's all about explicit identity
 
-* ...
+* authority files organize identifiers
+
+* data from diverse sources can be connected as linked open data\
+  (with URIs, open license, standard formats...)
+
+* Reality is complicated, data helps to simplify
 
